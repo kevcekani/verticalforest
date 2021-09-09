@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vertical Forest home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <style>
+    
+    body {
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+    
+    /* Menu bar */
+    .navbar {
+      overflow: hidden;
+      background-color: white;
+      float: right;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 14px;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 14px;  
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    img.logo {
+        padding-left: 2em;
+    }
+
+    /* Main */
+
+    #right img {
+        display: block;
+        margin-left: auto;
+    }
+
+    span.pj1 {
+        text-align: left;
+        color: grey;
+        font-size: 300%;
+    }
+    
+    span.pj2 {
+        text-align: left;
+        color: green;
+        font-size: 200%;
+        padding-top: 20rem;
+        padding-left: 10em;
+    }
+
+    .kolone {
+        float: left;
+        width: 50%;
+    }
+    
+    /* Clearfix */
+    .main::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* arkitektura */
+
+    div.arch {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+    }
+
+    #fashe {
+        align-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+
+    h2.gener {
+        color: green;
+        text-align: center;
+    }
+
+    #arch p {
+        text-align: center;
+        color: grey;
+        font-size: 15px;
+    }
+
+    a.readmore {
+      padding: 45%;
+      text-decoration: none;
+      color: green;
+    }
+
+    p.pad {
+      padding-top: 30px;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    /* Forma */
+
+    div.formcont {
+      padding-left: 30%;
+    }
+
+    input[type=text], textarea, select{
+  	width: 60%;
+ 	  padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+    }
+
+    button {
+  	width: 25%;
+  	background-color: green;
+  	color: white;
+  	padding: 14px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
+
+    input[type=text]:focus, textarea:focus {
+  	border: 2px solid green;
+    }
+
+    .hq, .cont {
+      font-size: 15px;
+    }
+
+    /** Footer **/
+
+    span.foot1 {
+      float: left;
+      color: white;
+    }
+
+    span.foot2 {
+      float: right;
+      color: white;
+    }
+
+    span.foot2 > a {
+      text-decoration: none;
+      color: white;
+    }
+
+    span.foot2 > a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      overflow: hidden;
+      background-color: black;
+      line-height: 900%;
+      font-size: 12px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    </style>
+    
+</head>
+<body>
+    <!-- Menu -->
+    <img class="logo" src="./logo.png">
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">About Us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Who are We?</a>
+            <a href="#">Investor Relations</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">Property Type
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Residential Apartments</a>
+              <a href="#">Offices</a>
+              <a href="#">Rental Space</a>
+            </div>
+        </div> 
+        <a href="#arch">Architecture</a>
+        <a href="#">Media</a>
+        <a href="#forma">Contact Us</a>
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      </div>   
+      
+    <!-- Main -->
+    <div class="main">
+        <div class="kolone">
+          <p><span class="pj1"><br><br><br><br>Zgjedhja e atyre</span><br><span class="pj2">qe dine te zgjedhin</span></p>
+        </div>
+        <div class="kolone">
+          <img class="bldg" src="./bldg.png">
+        </div>
+    </div>
+  
+    <!-- Arkitektura -->
+    <div id="arch" class="arch">
+        <p>
+            <h2 class="gener">Gener 2 and Stefano Boeri Architetti<br>to create and develop the first Vertical Forest for Tirana.</h2> 
+        </p>
+        <p class="pad">Italian architect Stefano Boeri has has teamed up with Albanian largest developer Gener 2, to design and develop a vertical forest tower for Tirana, Albania, which will be planted with colourful and scented flowers and herbs.
+        </p>
+
+        <p>
+            Named the Tirana Vertical Forest, the tower with a glass facade punctuated with fragrant planted balconies will be one of Stefano Boeri Architetti's signature vertical forest towers.
+        </p>
+
+        <p>
+            Vertical forests are buildings that are planted with trees, shrubs and flowers to increase the green surface area in cities and improve local air quality. Stefano Boeri Architetti specialise in these green facades, and has designed towers in cities such as Milan, Utrecht and Nanjing.
+        </p>  
+    </div>
+    <br>
+    <a href="#" class="readmore">Read More</a><br><br><br><br>
+    <img src="./fashe.png" id="fashe" style="width:90%">
+    <br><br>
+
+    <div class="formcont">
+    <form method="POST" id="forma">
+      <input type="text" id="name" max="40" pattern="[a-zA-Z]+[ ][a-zA-Z]+" placeholder="Your name" required><br>
+      <input type="text" id="mail" max="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="E-mail" required><br>
+      <input type="text" id="phone" max="40" pattern="^(?:0|\(?\+355\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder="Phone" required><br>
+      <textarea rows="4" cols="30" placeholder="Message"></textarea><br>
+      <button type="button" id="send">Send</button>
+    </form>
+    <h2 class="hq">Headquarters:</h2>
+    <p class="hq">Aba Business Center, Floor 7, Rruga Papa Gjon Pali II, Tirana, Albania</p>
+    <br>
+    
+    <h2 class="cont">Contact:</h2>
+    <p class="cont">Email: info@gener2.al<br>
+      Tel: +355 4 4501700 I Fax: +355 4 2248312</p>
+    </div>
+    <br><br>
+    <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5683069674246!2d19.822948714959523!3d41.31825397927059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350314ba3b40511%3A0xccfde4bf08105266!2sVertical%20Forest%20Tirana!5e0!3m2!1sen!2s!4v1582229074670!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <br><br>
+    <footer>
+      <span class="foot1">&copy; 2019 Vertical Forest Tirana</span> &nbsp; &nbsp; &nbsp; &nbsp; 
+      <span class="foot2"><a href="#">Privacy</a> <a href="#">Policy</a> <a href="#">Terms of Use</a> <a href="#">Cookies</a></span>
+    </footer>
+</body>
+</html>
